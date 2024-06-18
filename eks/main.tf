@@ -35,6 +35,9 @@ module "eks" {
       max_size     = v.max_size
       desired_size = v.desired_size
 
+      ami_type       = v.ami_type
+      instance_types = v.instance_types
+
       labels = v.labels
       taints = v.taints
 
